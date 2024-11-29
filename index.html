@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Monetag Ad Script -->
+    <script>
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://zireemilsoude.net/4/8577393';
+            s.async = true;
+            d.head.appendChild(s);
+        })();
+    </script>
+</head>
+<body>
+    <h1>Welcome to Telegram Web App</h1>
+    <div id="telegram-user"></div>
+    <script>
+        Telegram.WebApp.ready();
+        document.getElementById('telegram-user').innerText =
+            Telegram.WebApp.initData || 'No Telegram Data Found';
+    </script>
+</body>
+</html>
